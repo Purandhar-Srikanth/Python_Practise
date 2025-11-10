@@ -36,7 +36,7 @@ class DataPreprocessor:
         pd.DataFrame
             Loaded dataset
         """
-        df = pd.read_data(filepath)
+        df = pd.read_csv(filepath)
         print(f"Data loaded successfully. Shape: {df.shape}")
         return df
     
